@@ -1,0 +1,46 @@
+page-login {
+
+  .fixed-content {
+    background-color: #fff;
+  }
+
+  .logo {
+    height: 75%;
+    width: 96%;
+    margin-top: 30%;
+  }
+
+  .label-md[stacked] {
+    font-family: Tahoma;
+    color: #000 !important;
+  }
+
+  .pad {
+    padding-top: 20%;
+  }
+
+  .button-md {
+    font-family: Tahoma;
+    color: #000 !important;
+    background-color: #ffc000;
+    text-transform: none !important;
+  }
+
+  .item-input ion-input,
+  .item-input ion-textarea {
+    font-family: Tahoma;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    border-bottom-width: 1px;
+  }
+
+  .row {
+    padding-top: 3%;
+  }
+
+  a {
+    color: #ffc000;
+  }
+
+}

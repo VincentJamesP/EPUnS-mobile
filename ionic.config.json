@@ -1,0 +1,7 @@
+{
+  "name": "uhack_epuns",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

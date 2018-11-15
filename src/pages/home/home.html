@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>Logo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <ion-row>
+      <ion-col col-3>
+        <ion-icon md="md-contact"></ion-icon>
+      </ion-col>
+      <ion-col col-9>
+        <h3 class="user">John Christopher Ilalim
+        </h3><br>
+        <p class="rank">Legendary Saver</p>
+
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+    <ion-row>
+      <ion-col col-6>
+        ACCOUNT BALANCE<h6>PHP 5,000.00</h6>
+      </ion-col>
+      <ion-col col-6 text-right>
+        POINTS<h6>400 EPUnS</h6>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <br>
+
+  <div class="options">
+    <ion-row>
+      <ion-col col-4 (click)="TopUp()" class="border">
+        <ion-icon md="md-folder-open">
+        </ion-icon>
+      </ion-col>
+      <ion-col col-4 (click)="Transac()" class="border">
+        <ion-icon md="md-card">
+        </ion-icon>
+      </ion-col>
+      <ion-col col-4 (click)="Redeem()" class="border">
+        <ion-icon md="logo-bitcoin">
+        </ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row class="
+          txt">
+      <ion-col col-4 text-center class="labelborder">
+        Top up
+      </ion-col>
+      <ion-col col-4 text-center class="labelborder">
+        Transactions
+      </ion-col>
+      <ion-col col-4 text-center class="labelborder">
+        Redeem
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <br>
+
+  <div>
+    <ion-row>
+      <ion-col float-right>
+        Latest Transactions
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div>
+    <ion-row>
+      <ion-col col-1>
+      </ion-col>
+      <ion-col col-10>
+        You have not made any transactions yet
+      </ion-col>
+      <ion-col col-1>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="fixed">
+    <p class="ads">Powered By:</p>
+    <img src="/assets/imgs/union.png">
+  </div>
+</ion-content>

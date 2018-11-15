@@ -1,0 +1,20 @@
+virtualcard {
+
+  .card {
+    height: 30%;
+    background-color: #F93;
+    border-radius: 2%;
+    box-shadow: 3px 3px #9b9b9b;
+    color: #fff;
+  }
+
+  .cardnum {
+    font-size: 180%;
+  }
+
+  .barcode {
+    height: 30%;
+    background-color: #fff;
+
+  }
+}
