@@ -2,14 +2,11 @@ page-home {
   .ion-md-contact {
     font-size: 380%;
     color: #0061ff;
+    margin-top: 9%;
+    margin-left: 20%;
   }
 
-  .toolbar-background-md {
-    background-color: #0061ff;
-    box-shadow: 5px 10px #9b9b9b;
-  }
-
-  .ion-md-folder-open {
+  .ion-md-arrow-round-up {
     color: #fff;
     font-size: 300%;
     padding-left: 30%;
@@ -21,14 +18,14 @@ page-home {
     padding-left: 30%;
   }
 
-  .ion-logo-bitcoin {
+  .ion-logo-usd {
     color: #fff;
     font-size: 300%;
     padding-left: 30%;
   }
 
   .options {
-    background-color: #0061ff;
+    background-color: #001c49;
     height: 15%;
   }
 
@@ -42,6 +39,18 @@ page-home {
 
   .user {
     margin-top: 2%;
+  }
+
+  .badge {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .toolbar-background-md {
+    background-color: #001c49;
+    box-shadow: 5px 10px #9b9b9b;
   }
 
   .bar-button-menutoggle-md {
@@ -72,4 +81,5 @@ page-home {
     border: solid #ccc;
     border-top: 0px;
   }
+
 }

@@ -1,0 +1,105 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar hideBackButton>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Registration</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-content padding>
+  <div class=".mainbody">
+    <img src="assets/imgs/login_icon.png" class="logo">
+    <p class="pad">Welcome to EPUnS<br>
+      We'd like to know more about you</p>
+
+    <ion-list>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label stacked>First Name</ion-label>
+            <ion-input type="text" id="fname" [(ngModel)]="fname"></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item>
+            <ion-label stacked>Last Name</ion-label>
+            <ion-input type="text" id="lname" [(ngModel)]="lname"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-item>
+        <ion-label stacked>Email</ion-label>
+        <ion-input type="text" id="email" [(ngModel)]="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Username</ion-label>
+        <ion-input type="text" id="username" [(ngModel)]="username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Password</ion-label>
+        <ion-input type="password" id="password" [(ngModel)]="password">{{password}}></ion-input>
+      </ion-item>
+
+      <ion-item class="privacy">
+        <ion-label>I have read and agree to the <br><a href="#">Privacy Policy</a> set by EPUnS</ion-label>
+        <ion-checkbox color="dark"></ion-checkbox>
+      </ion-item>
+
+      <button ion-button full>Register your account</button>
+
+      <ion-row float-right>
+        Already have an account?&nbsp;<a href="#" (click)="login_link()">Login here</a>
+      </ion-row>
+
+    </ion-list>
+    <!-- <ion-row>
+      <ion-col text-center>
+        <img src="assets/imgs/logo.png" style="max-width: 15%;">
+      </ion-col>
+    </ion-row>
+    <div class="border">
+      <ion-icon name="users" item-left></ion-icon>
+      <div class="inputgrp">
+        <img src="assets/imgs/fname.png" class="imgicon">
+        <input type="text" placeholder="First name" id="fname" [(ngModel)] = "fname">
+      </div>
+      <div class="inputgrp">
+        <img src="assets/imgs/lname.png" class="imgicon">
+        <input type="text" placeholder="Last name" id="lname" [(ngModel)] = "lname">
+      </div>
+      <div class="inputgrp">
+        <img src="assets/imgs/email.svg" class="imgicon">
+        <input type="text" placeholder="Email" id="email" [(ngModel)] = "email">
+      </div>
+      <div class="inputgrp">
+        <img src="assets/imgs/usr.svg" class="imgicon">
+        <input type="text" placeholder="Username" id="username" [(ngModel)] = "username">
+      </div>
+      <div class="inputgrp">
+        <img src="assets/imgs/pass.png" class="imgicon">
+        <input type="Password" placeholder="Password" id="password" [(ngModel)] = "password">
+      </div>
+      <p>
+        <button ion-button color="primary" menuToggle class="Register" (click)="register()">Sign Up</button>
+      </p> -->
+    <!-- <p>
+      By signing up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a href="#">Cookies Policy</a>.
+    </p> -->
+    <!-- <p>
+        Already have an account? <a href="" (click)="login_link()">Login here</a>
+      </p>
+    </div> -->
+  </div>
+</ion-content>

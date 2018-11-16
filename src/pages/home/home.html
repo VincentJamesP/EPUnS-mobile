@@ -3,18 +3,19 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-center>Logo</ion-title>
+    <ion-title text-center><img src="/assets/imgs/titlebar.png"></ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <div>
-    <ion-row>
+    <ion-row style="padding-top:13%;">
       <ion-col col-3>
         <ion-icon md="md-contact"></ion-icon>
+        <div class="badge"><img src="/assets/imgs/tycoon.png"></div>
       </ion-col>
       <ion-col col-9>
-        <h3 class="user">John Christopher Ilalim
+        <h3 class="user" style="margin-top:8%;">France Laz
         </h3><br>
         <p class="rank">Legendary Saver</p>
 
@@ -28,10 +29,10 @@
   <div>
     <ion-row>
       <ion-col col-6>
-        ACCOUNT BALANCE<h6>PHP 5,000.00</h6>
+        ACCOUNT BALANCE<h4>PHP 5,000.00</h4>
       </ion-col>
       <ion-col col-6 text-right>
-        POINTS<h6>400 EPUnS</h6>
+        POINTS<h4>400 EPUnS</h4>
       </ion-col>
     </ion-row>
   </div>
@@ -41,7 +42,7 @@
   <div class="options">
     <ion-row>
       <ion-col col-4 (click)="TopUp()" class="border">
-        <ion-icon md="md-folder-open">
+        <ion-icon md="md-arrow-round-up">
         </ion-icon>
       </ion-col>
       <ion-col col-4 (click)="Transac()" class="border">
@@ -49,7 +50,7 @@
         </ion-icon>
       </ion-col>
       <ion-col col-4 (click)="Redeem()" class="border">
-        <ion-icon md="logo-bitcoin">
+        <ion-icon md="logo-usd">
         </ion-icon>
       </ion-col>
     </ion-row>
@@ -62,7 +63,7 @@
         Transactions
       </ion-col>
       <ion-col col-4 text-center class="labelborder">
-        Redeem
+        Virtual Card
       </ion-col>
     </ion-row>
   </div>

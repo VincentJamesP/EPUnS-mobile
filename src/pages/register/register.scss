@@ -1,0 +1,53 @@
+page-register {
+  .fixed-content {
+    background-color: #FFF;
+
+  }
+
+  .logo {
+    margin-top: 0%;
+  }
+
+  .label-md[stacked] {
+    font-family: Tahoma;
+    color: #000 !important;
+  }
+
+  .item-inner {
+    font-size: 10px;
+  }
+
+  .button-md {
+    font-family: Tahoma;
+    color: #fff !important;
+    background-color: #F93;
+    text-transform: none !important;
+  }
+
+  .item-input ion-input,
+  .item-input ion-textarea {
+    font-family: Tahoma;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    border-bottom-width: 1px;
+  }
+
+  .row {
+    padding-top: 3%;
+  }
+
+  a {
+    color: #001c49;
+  }
+
+  .privacy {
+    padding-left: 20%;
+  }
+
+  .pad {
+    padding-left: 5%;
+  }
+
+
+}

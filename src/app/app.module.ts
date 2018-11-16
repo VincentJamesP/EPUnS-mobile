@@ -9,12 +9,17 @@ import { IonicStorageModule } from "@ionic/storage";
 import { MyApp } from "./app.component";
 import { HomePage } from "../pages/home/home";
 import { ListPage } from "../pages/list/list";
+import { LoginPage } from "../pages/login/login";
 
 import { VirtualcardComponent } from "../components/virtualcard/virtualcard";
+import { DashboardComponent } from "../components/dashboard/dashboard";
 import { Redeem1Component } from "../components/redeem1/redeem1";
 import { Redeem2Component } from "../components/redeem2/redeem2";
+import { Redeem3Component } from "../components/redeem3/redeem3";
+import { TransactionComponent } from "../components/transaction/transaction";
 
 import { UserProvider } from "../providers/user/user";
+import { RegisterPage } from "../pages/register/register";
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { UserProvider } from "../providers/user/user";
     ListPage,
     VirtualcardComponent,
     Redeem1Component,
-    Redeem2Component
+    Redeem2Component,
+    Redeem3Component,
+    LoginPage,
+    RegisterPage,
+    DashboardComponent,
+    TransactionComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +48,12 @@ import { UserProvider } from "../providers/user/user";
     ListPage,
     VirtualcardComponent,
     Redeem1Component,
-    Redeem2Component
+    Redeem2Component,
+    Redeem3Component,
+    LoginPage,
+    RegisterPage,
+    DashboardComponent,
+    TransactionComponent
   ],
   providers: [
     StatusBar,

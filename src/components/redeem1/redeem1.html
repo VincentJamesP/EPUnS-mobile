@@ -4,20 +4,25 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-center>Logo</ion-title>
+    <ion-title text-center><img src="/assets/imgs/titlebar.png"></ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <br>
   <br>
+  <br>
   <ion-row>
+    <ion-col col-2></ion-col>
     <ion-col col-2>
+      <ion-icon md="logo-usd"></ion-icon>
     </ion-col>
-    <ion-col col-8>
-      <p class="bal">You currently have<h3>PHP 1,500.00</h3>
+    <ion-col col-6>
+      <b>You currently have</b>
+      <h3>PHP 1,500.00</h3>
     </ion-col>
     <ion-col col-2></ion-col>
+
   </ion-row>
   <br>
   <br>
@@ -25,7 +30,7 @@
     <ion-col col-2></ion-col>
     <ion-col col-8>
       <ion-item>
-        <ion-input type="text" placeholder="amount"></ion-input>
+        <ion-input type="text" name="cardnum" [(ngModel)]="cardnum" placeholder=" enter the code here .."></ion-input>
       </ion-item>
     </ion-col>
     <ion-col col-2></ion-col>
@@ -33,16 +38,16 @@
   <ion-row>
     <ion-col col-2></ion-col>
     <ion-col col-8>
-      Please enter the 9-digit code found on your EPUn Prepaid Card to redeem the amount
+      Please enter the 12-digit code found on your EPUn Prepaid Card to redeem the amount
     </ion-col>
     <ion-col col-2></ion-col>
   </ion-row>
-
+  <br>
   <br>
   <ion-row>
     <ion-col col-2></ion-col>
     <ion-col col-8>
-      <button ion-button full (click)="red()">Redeem Now</button>
+      <button ion-button full name="receiveCard" (click)="red()">Redeem Now</button>
     </ion-col>
     <ion-col col-2></ion-col>
   </ion-row>

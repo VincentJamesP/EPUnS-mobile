@@ -1,37 +1,44 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild } from "@angular/core";
+import { IonicPage, NavController, NavParams, Nav } from "ionic-angular";
+import { Platform } from "ionic-angular";
+
+import { DashboardComponent } from "../../components/dashboard/dashboard";
+import { VirtualcardComponent } from "../../components/virtualcard/virtualcard";
 
 @Component({
-  selector: 'page-list',
-  templateUrl: 'list.html'
+  selector: "page-list",
+  templateUrl: "list.html"
 })
 export class ListPage {
-  selectedItem: any;
-  icons: string[];
-  items: Array<{title: string, note: string, icon: string}>;
+  @ViewChild(Nav) nav: Nav;
+  rootPage: any = DashboardComponent;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // If we navigated to this page, we will have an item available as a nav param
-    this.selectedItem = navParams.get('item');
+  pages: Array<{ title: string; component: any }>;
 
-    // Let's populate this page with some filler content for funzies
-    this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
-    'american-football', 'boat', 'bluetooth', 'build'];
-
-    this.items = [];
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public platform: Platform
+  ) {
+    this.pages = [
+      { title: "Dashboard", component: DashboardComponent },
+      { title: "Virtual Card", component: VirtualcardComponent },
+      { title: "Transactions", component: VirtualcardComponent },
+      { title: "Redeem", component: VirtualcardComponent }
+    ];
   }
 
-  itemTapped(event, item) {
-    // That's right, we're pushing to ourselves!
-    this.navCtrl.push(ListPage, {
-      item: item
-    });
+  ionViewDidLoad() {
+    console.log("ionViewDidLoad UserappPage");
+
+    // document.getElementById('tab-t0-0').innerHTML = '<ion-icon name="locate"></ion-icon>Locate';
+    // document.getElementById('tab-t0-1').innerHTML = '<ion-icon name="calendar"></ion-icon>';
+    // document.getElementById('tab-t0-2').innerHTML = '<ion-icon name="contact"></ion-icon>';
+  }
+
+  openPage(page) {
+    // Reset the content nav to have just this page
+    // we wouldn't want the back button to show in this scenario
+    this.nav.setRoot(page.component);
   }
 }

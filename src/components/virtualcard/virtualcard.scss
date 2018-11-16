@@ -1,20 +1,37 @@
 virtualcard {
 
   .card {
-    height: 30%;
-    background-color: #F93;
+    height: 35%;
+    background-color: #001c49;
     border-radius: 2%;
     box-shadow: 3px 3px #9b9b9b;
-    color: #fff;
+    color: #F93;
   }
 
   .cardnum {
     font-size: 180%;
   }
 
+  .ion-md-contact {
+    font-size: 5.2em;
+  }
+
   .barcode {
     height: 30%;
     background-color: #fff;
 
+  }
+
+  .toolbar-background-md {
+    background-color: #001c49;
+    box-shadow: 5px 10px #9b9b9b;
+  }
+
+  .bar-button-menutoggle-md {
+    color: #fff;
+  }
+
+  .toolbar-title-md {
+    color: #fff;
   }
 }
